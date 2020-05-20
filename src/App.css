@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+body, html{
+    margin: 0;
+    height: 100%;
+
+}
+body{
+    width: 100%;
+    background: rgb(106, 98,210);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+form.sign-in-form{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background-color: white;
+    padding: 30px 40px;
+    border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h2{
+    padding: 0 20px;
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input{
+    margin: 7px 0;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgba(128, 128, 128, 0.25);
 }
 
-.App-link {
-  color: #61dafb;
+input:focus{
+    outline: none;
+    background-color: rgba(128, 128, 128, 0.1);;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input.hasError:focus{
+    background-color: rgba(220, 20, 60, 0.64);
+}
+
+div.checkbox-container{
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+input.checkbox{
+    height: 15px;
+    width: 15px;
+    margin: 0;
+    border-radius: 1px;
+}
+
+
+span{
+    margin-left: 5px;
+    font-size: 15px;
+    line-height: 15px;
+}
+
+button{
+    border: none;
+    background-color: rgb(106, 98,210);
+    border-radius: 2px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 15px 0;
+    font-family: sans-serif;
+    margin: 20px 0;
+}
+
+a{
+    margin: 10px 0;
+    text-align: center;
+    color: rgb(106, 98,210);
+    text-decoration: none;
+}
+
+div.err{
+    text-align: right;
+    font-size: 12px;
+    color: rgb(106, 98,210);;
 }
